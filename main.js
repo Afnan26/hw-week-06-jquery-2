@@ -1,10 +1,7 @@
-$(document).ready(function(){
-    $("button").click(function(){
-      $("#clicker").fadeIn();
-      $("#secret").fadeIn("slow");
-      $("div").fadeIn(1000);
-    
-    });
-});
-
-
+$( document.body ).click(function () {
+    if ( $( "div" ).first().is( ":hidden" ) ) {
+      $( "div" ).slideDown( "slow" );
+    } else {
+      $( "div" ).hide();
+    }
+  });
